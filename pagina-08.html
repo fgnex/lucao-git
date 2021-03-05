@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chk  &rd - fgncorp.com</title>
+</head>
+<body>
+    <h1>USANDO CHECKBOX E RADIO BUTTONS</h1>
+    <h1>Matricula nas disciplinas</h1>
+    <form action="pagina-08.html" method="get">
+        <h2>Disciplinas</h2>
+        <!-- (label[for]+input[type="checkbox"]+br)*5 -->
+        <label for="ilp108">ILP108</label><input type="checkbox" id="ilp108" name="disciplinas" checked><br>
+        <label for="ilp109">ILP109</label><input type="checkbox" id="ilp109" name="disciplinas"><br>
+        <label for="gpj002">GPJ002</label><input type="checkbox" id="gpj002" name="disciplinas"><br>
+        <label for="agn004">AGN004</label><input type="checkbox" id="agn004" name="disciplinas"><br>
+        <label for="inf105">INF105</label><input type="checkbox" id="inf105" name="disciplinas"><br>
+        <h2>Turnos</h2>
+        <label for="m">Manhã</label><input type="radio" id="m" name="turno" value="m">
+        <label for="t">Tarde</label><input type="radio" id="t" name="turno" value="t">
+        <label for="n">Noite</label><input type="radio" id="n" name="turno" value="n" checked>
+        <br>
+        <input type="submit" value="Matricular">
+        <br>
+        <input type="hidden" name="1+1" value="2">
+        <br><br>
+
+        <select name="disciplina" id="disciplina">
+            <option value="" selected disabled hidden>Selecione...</option>
+            <option value="ilp108">Programação para Redes I</option>
+            <option value="ilp109">Programação para Redes II</option>
+            <option value="GEST108">Gestão para Projetos de Redes</option>
+            <option value="IP108">Estatistica Descritiva</option>
+            <option value="FLP108">Administração para redes</option>
+        </select>
+
+        <br><br>
+
+        <select name="estado" id="estado">
+            <optgroup label = "Sudeste">
+                <option value="" selected disabled hidden>Selecione...</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="mg">Minas Gerais</option>
+            </optgroup>
+            <optgroup label = "Sul">
+                <option value="" selected disabled hidden>Selecione...</option>
+                <option value="sc">Santa Catarina</option>
+                <option value="rs">Rio Grande do Sul</option>
+                <option value="pr">Paraná</option>
+            </optgroup>
+            <optgroup label = "Nordeste">
+                <option value="" selected disabled hidden>Selecione...</option>
+                <option value="ba">Bahia</option>
+                <option value="se">Sergipe</option>
+                <option value="pe">Pernambuco</option>
+            </optgroup>
+        </select>
+
+
+
+    </form>
+</body>
+</html>
